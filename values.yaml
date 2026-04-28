@@ -17,3 +17,12 @@ resources: {}
 # 🔥 ADD THIS
 ingress:
   enabled: false
+
+httpRoute:
+  enabled: false
+
+serviceAccount:
+  create: false
+
+autoscaling:
+  enabled: false
