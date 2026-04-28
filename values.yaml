@@ -1,12 +1,19 @@
 image:
   repository: docker.io/dineshdview/python-app
   tag: 0e8c8542-1d4a-4794-89bf-f3b25660bb3f
+  pullPolicy: IfNotPresent
 
 service:
   port: 80
 
 containerPort: 5000
 
-# 🔥 ADD THIS
 serviceAccount:
   create: false
+  name: ""
+
+resources: {}
+
+# 🔥 ADD THIS
+ingress:
+  enabled: false
